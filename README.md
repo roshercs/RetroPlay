@@ -23,6 +23,7 @@ Con el entorno virtual activo procedemos a la instalación de las bibliotecas ne
 Se requiere además modificar la configuración de mednafen. Para ello accedemos al archivo de configuración con nano ~/.mednafen/mednafen.cfg, dentro del cual buscaremos la opción "video.fs" y pondremos su valor a 1 para habilitar la pantalla completa. Además, se busca la opción "sound.devie" y se cambia el valor default por hw:2 para habilitar la salida de audio por el puerto jack 3.5 donde se podrá conectar audífonos o bocinas para la salida del audio.
 
 Para configurar la tarjeta Raspberry para ejecutarse desde el arranque al emulador se requiere de la creación de un archivo. Dentro de la carpeta /home/pi/.config creamos la carpeta autostart. En esta se crea el archivo inicio.desktop.  En el archivo creado ingresamos como primera línea [Desktop Entry] (respetando mayúsculas) y a partir de la segunda linea los comandos a ejecutar usando el parámetro Exec=. En nuestro caso, ya que requerimos inicializar el entorno virtual y ejecutar el archivo, tendríamos:
+
     [Desktop Entry]
     Exec=sudo su
     Exec=source /home/pi/RetroPlay/bin/activate
