@@ -1,0 +1,5 @@
+[Desktop Entry]
+Exec=sudo su
+Exec=source /home/pi/RetroPlay/bin/activate
+Exec=cd RetroPlay
+Exec=python3  RetroPlay.py
