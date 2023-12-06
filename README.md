@@ -29,8 +29,9 @@ Con los permisos concedidos, ejecutamos el comando para ejecutar:
 
 
 
-
+---------------------------------------------------------------
 Instalación manual del proyecto:
+
 En caso de optar por una instalación manual del proyecto, se recomienda tener conociminetos previos del uso del sistema Raspberry Pi OS o cualquier otra distribución de linux para evitar errores de sistema.
 Primeramente, al requerirse la instalación de distintos paquetes se ejecutan los comandos apt-get -update y apt-get upgrade. El primero actualizará el instalador de paquetes mientras que el segundo actualizará los paquetes preinstalados en el sistema. Podemos instalar mednafen con el comando apt-get install mednafen. Además, se instala (o actualiza) la paquetería para el control de los pines GPIO: sudo apt-get install python-rpi.gpio. Además de estos dos paquetes se instala la paquetería matchbox-keyboard (apt install matchbox-keyboard) que permitirá emular un teclado virtual para de este modo no requerir del uso de teclados físicos en la consola.
 
