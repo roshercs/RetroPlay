@@ -9,7 +9,7 @@ Requerimientos: Raspberry Pi OS with Desktop 64 bits, tarjeta Raspberry Pi 3 o s
 Bibliotecas: python-vlc, python3-venv, pillow, RPi.GPIO, keyboard, matchbox-keyboard, pyudev, mednafen
 
 
-Se asume que el usuario realiza la instalación base del sistema operativo Raspberry Pi OS. El repositorio presente permite la descarga e instalación automática del proyecto al emplear el comando pip install git+https://github.com/psf/requests.git
+Se asume que el usuario realiza la instalación base del sistema operativo Raspberry Pi OS. El repositorio presente permite la descarga e instalación automática del proyecto al emplear el comando pip install git+https://github.com/roshercs/RetroPlay.git
 
 Instalación manual del proyecto:
 En caso de optar por una instalación manual del proyecto, se recomienda tener conociminetos previos del uso del sistema Raspberry Pi OS o cualquier otra distribución de linux para evitar errores de sistema.
