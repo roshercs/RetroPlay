@@ -13,19 +13,19 @@ Se asume que el usuario realiza la instalación base del sistema operativo Raspb
 Instalacion automatizada del proyecto:
 Para la instalación del proyecto de forma más automatizada, requerimos crear la carpeta gitCopy en la ruta /home/pi. Para ello empleamos el comando sudo mkdir /home/pi/gitCopy. Una vez creada la carpeta descargamos el directorio de github (se asume que la tarjeta ya cuenta con conexión a internet). Para descargar el repositorio se requiere instalar los comandos de git, por lo que primero requerimos actualisar apt-get con el comando sudo apt-get update. Con este actualizado ejecutamos el comando 
 
-apt-get install git
+    apt-get install git
 
 Para habilitar los comandos de gitHub. Con los paquetes instalados se clona el repertorio en la carpeta creada con el comando:
 
-git clone https://github.com/roshercs/RetroPlay.git /home/pi/gitCopy
+    git clone https://github.com/roshercs/RetroPlay.git /home/pi/gitCopy
 
 Esto copia el contenido del repositorio dentro de nuestro sistema. Con los archivos descargados procedemos a ejectuar la instalación automática. Nos debemos posicionar en la carpeta gitCopy (cd /home/pi/gitCopy). Dentro de este escritorio habilitamos el modo super usuario con el comando sudo su. Se conceden los permisos permitentes a la instalación con el comando:
 
-chmod +x install.sh
+    chmod +x install.sh
 
 Con los permisos concedidos, ejecutamos el comando para ejecutar:
 
-./install_project.sh
+    ./install.sh
 
 
 
