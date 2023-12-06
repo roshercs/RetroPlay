@@ -30,3 +30,5 @@ Para configurar la tarjeta Raspberry para ejecutarse desde el arranque al emulad
     Exec=cd RetroPlay
     Exec=python3  RetroPlay.py
 
+Adicionalmente, se requiere hacer copia de las imágenes disponibles en la carpeta images dentro de /doc a la carpeta immages del sistema, esto permitirá poner carátulas a los juegos según la consola a la que pertenecen. En este punto podemos también copiar el set de roms iniciales a precargar en el sistema. De no hacerse se requerirá insertar una USB para la copia de los juegos inciiales.
+Con estas configuraciones, solo requerimos copiar el código fuente RetroPlay.py en la carpeta /home/pi/RetroPlay con el comando cp RetroPlay.py /home/pi/RetroPlay. Para que este funcione, el código fuente debe estar ubicado en la carpeta /home/pi, en otro caso se requerirá ingresar la ruta completa del archivo. Se usa el comando cp en modo superusuario para permitir la copia dentro del entorno virtual, sin estos privilegios no se permite la modificación de la carpeta de entorno virtual directamente.
