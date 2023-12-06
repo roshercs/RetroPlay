@@ -18,7 +18,7 @@ Primeramente, al requerirse la instalación de distintos paquetes se ejecutan lo
 Para la instalación del resto de paquetes se requiere la creación de un entorno virtual con python. Para ello instalamos el paquete necesariocon  sudo apt-get install python3-venv
 Para la ejecución de este proyecto se requiere la creación de tres carpetas: roms, images y RetroPlay. Para ello se requiere el acceso a superusuario (sudo su) y la creación de cada una con los siquientes comandos: mkdir /home/pi/roms mkdir /home/pi/images y mkdir /home/pi/RetroPlay. Con estos creados, nos posicionamos en la carpeta RetroPlay (cd /home/pi/RetroPlay) y se crea un entorno virtual en python con el comando python3 -m venv RetroPlay. Con el entorno creado, podemos activarlo con el comando source /home/pi/RetroPlay/bin/activate.
 
-Con el entorno virtual activo procedemos a la instalación de las bibliotecas necesarias con el comando pip install biblioteca (python-vlc, python3-venv, pillow, RPi.GPIO, keyboard, matchbox-keyboard, pyudev)
+Con el entorno virtual activo procedemos a la instalación de las bibliotecas necesarias con el comando pip install biblioteca (python-vlc, pillow, keyboard y pyudev)
 
 Se requiere además modificar la configuración de mednafen. Para ello accedemos al archivo de configuración con nano ~/.mednafen/mednafen.cfg, dentro del cual buscaremos la opción "video.fs" y pondremos su valor a 1 para habilitar la pantalla completa. Además, se busca la opción "sound.devie" y se cambia el valor default por hw:2 para habilitar la salida de audio por el puerto jack 3.5 donde se podrá conectar audífonos o bocinas para la salida del audio.
 
