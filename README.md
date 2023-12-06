@@ -14,6 +14,6 @@ pyudev
 mednafen
 
 
-Enlace a video demostrativo: https://youtu.be/5WbNJEwYso0
+Enlace a video demostrativo: https://youtu.be/rUYllc8fe6w
 
 Enlace a repositorio Github: https://github.com/roshercs/RetroPlay.git
